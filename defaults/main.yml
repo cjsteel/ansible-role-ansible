@@ -1,0 +1,13 @@
+--- #ansible/defaults/main.yml
+
+# this should all use the new resource role in meta/main.yml.
+
+ansible_role_root       : '~/projects/ace/roles'
+ansible_controller_user : 'ansible'
+
+# ansible_role_repositories:
+#   - git clone git@github.com:csteel/ansible-role-ensure_dirs.git ensure_dirs
+#   - git clone git@github.com:csteel/ansible-role-ensure_dirs.git ensure_dirs
+#   - git clone git@github.com:csteel/ansible-role-fsl.git fsl
+#   - git clone git@github.com:csteel/ansible-role-myrepos.git myrepos
+
