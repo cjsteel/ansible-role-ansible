@@ -1,11 +1,14 @@
---- #ansible/defaults/main.yml
+---
+##  ansible/defaults/main.yml
+#
+#
 
 # this should all use the new resource role in meta/main.yml.
 
 ## controller user vars
 
-ansible_controller_user		  : '{{ project_controller_user_name }}'
-ansible_controller_home 	  : '{{ project_controller_user_home }}'
-ansible_controller_resources_home : '{{ project_controller_resources_home }}'
+ansible_controller_user: '{{ project_controller_user_name }}'
+ansible_controller_home: '{{ project_controller_user_home }}'
+ansible_controller_resources_home: '{{ project_controller_resources_home }}'
 
 
