@@ -2,12 +2,10 @@
 
 # this should all use the new resource role in meta/main.yml.
 
-ansible_role_root       : '~/projects/ace/roles'
-ansible_controller_user : 'ansible'
+## controller user vars
 
-# ansible_role_repositories:
-#   - git clone git@github.com:csteel/ansible-role-ensure_dirs.git ensure_dirs
-#   - git clone git@github.com:csteel/ansible-role-ensure_dirs.git ensure_dirs
-#   - git clone git@github.com:csteel/ansible-role-fsl.git fsl
-#   - git clone git@github.com:csteel/ansible-role-myrepos.git myrepos
+ansible_controller_user		  : '{{ project_controller_user_name }}'
+ansible_controller_home 	  : '{{ project_controller_user_home }}'
+ansible_controller_resources_home : '{{ project_controller_resources_home }}'
+
 

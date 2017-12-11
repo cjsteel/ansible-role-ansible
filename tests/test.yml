@@ -14,7 +14,6 @@
     - output.stdout != "\r\n"
     ignore_errors: yes
 
-
   - name: "Now that we are sure Python 2.7 is installed we can gather our facts"
     setup:
 
