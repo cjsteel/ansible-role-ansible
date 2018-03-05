@@ -1,9 +1,16 @@
 ---
-- name: Add ansible repository.
+## roles/ansible/tasks/setup-Ubuntu.yml
+#
+#
+
+- name: "Add Ubuntu ansible ppa repository"
+  become: true
   apt_repository: repo='ppa:ansible/ansible'
 
-- name: Update apt cache.
+- name: "Update apt cache"
+  become: true
   apt: update_cache=yes cache_valid_time=86400
 
-- name: Install Ansible.
+- name: "Install Ansible"
+  become: true
   apt: name=ansible state=installed

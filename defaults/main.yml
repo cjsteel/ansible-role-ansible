@@ -11,4 +11,7 @@ ansible_controller_user: '{{ project_controller_user_name }}'
 ansible_controller_home: '{{ project_controller_user_home }}'
 ansible_controller_resources_home: '{{ project_controller_resources_home }}'
 
+ansible_deployment_user: '{{ project_deployment_user_name }}'
+ansible_deployment_home: '{{ project_deployment_user_home }}'
+ansible_deployment_resources_home: '{{ project_deployment_resources_home }}'
 

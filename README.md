@@ -22,6 +22,15 @@ None.
       roles:
         - { role: geerlingguy.ansible }
 
+## Example Ansible command
+
+```shell
+ansible-playbook systems.yml -i inventory/dev \
+--extra-vars "some_var='true'" \
+--limit localhost \
+--ask-ssh-pass
+```
+
 ## License
 
 MIT / BSD
